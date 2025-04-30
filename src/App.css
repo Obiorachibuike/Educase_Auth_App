@@ -1,0 +1,295 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100svh;
+  background-color: #f7f8f9;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  min-height: 100svh;
+  padding: 41px 20px;
+}
+
+.landing > h1 {
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0px;
+  color: #1d2226;
+  width: 231px;
+}
+
+.landing > p {
+  padding-bottom: 19px;
+  font-size: 15px;
+  line-height: 26px;
+  opacity: 60%;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #1d2226;
+  width: 232px;
+}
+
+button {
+  border-radius: 6px;
+  height: 46px;
+  border: none;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 500;
+  width: 100%;
+  background-color: #6c25ff;
+  color: #ffffff;
+}
+
+button:disabled {
+  background-color: #cbcbcb;
+  color: #ffffff;
+}
+
+.landing button.first {
+  background-color: #6c25ff;
+  color: #ffffff;
+}
+
+.landing button.second {
+  background-color: #6c25ff4b;
+  color: #1d2226;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-header {
+  background-color:rgb(171, 170, 170);
+}
+.profile-header h1 {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 27px 15px 19px 15px;
+  color: #1d2226;
+}
+
+.profile-content {
+  display: flex;
+  margin: 30px 20px;
+  gap: 20px;
+}
+
+.profile-content h2 {
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #1d2226;
+}
+
+.profile-content p {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #1d2226;
+}
+
+.profile > p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #1d2226;
+  margin-left: 20px;
+  margin-right: 18px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+fieldset {
+  position: relative;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  height: 40px;
+}
+
+fieldset legend {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  padding: 0 4px;
+  background: #f7f8f9;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6c25ff;
+  pointer-events: none;
+}
+
+fieldset input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1d2226;
+  line-height: 17px;
+  padding: 8px 0 4px;
+  background: none;
+  padding: 12px 16px 11px 16px;
+}
+
+span {
+  color: #dd4a3d;
+}
+
+.login {
+  padding: 40px 20px;
+}
+
+.login > h1 {
+  color: #1d2226;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  width: 188px;
+  margin-bottom: 14px;
+}
+
+.login > p {
+  color: #1d2226;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  opacity: 60%;
+  width: 232px;
+  margin-bottom: 33px;
+}
+
+.login .feild1 {
+  margin-bottom: 23px;
+}
+
+.login .feild2 {
+  margin-bottom: 14px;
+}
+
+.signup {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.signup > h1 {
+  color: #1d2226;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  width: 188px;
+  margin-bottom: 31px;
+}
+
+.signup p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-bottom: 10px;
+  color: #1d2226;
+}
+
+.signup form{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup button {
+  margin-top: auto;
+  background-color: #6c25ff;
+}
+
+.radio-group {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 10px;
+}
+
+.custom-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1d2226;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.radio-mark {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #919191;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark {
+  border: 1px solid #642af5;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: #6c25ff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mb18 {
+  margin-bottom: 18px;
+}
+
+.mb29 {
+  margin-bottom: 29px;
+}
+
+#profile-image {
+  width: 76px;
+  height: 76px;
+}
+
+#camera {
+  position: absolute;
+  top: 147px;
+  left: 79px;
+  width: 21px;
+  height: 23px;
+}
+
+@media (width>480px) {
+  .app {
+    border: 1px solid #ccc;
+  }
+}
+.container{
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  height: 100%;
+  width: 25%;
+  margin-left: 36%;
+  border: 1px solid black ;
+  padding: 10px;
+}
